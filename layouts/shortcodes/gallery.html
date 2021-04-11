@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+{{ $image := (.Page.Resources.ByType "image") }}
+{{ with $image }}
+    {{ $len := (len .) }}
+    {{ range $index, $element := . }}
+    {{ $resized := .Fill "350x350 q50" }}
+    {{ if modBool $index 3 }}
+    <div class="row" style="margin-bottom: 10px;">
+    {{ end }}
+          <div class="col-sm text-center">
+            <a href="{{ .Permalink }}" data-lightbox="x">
+                <img src="{{ $resized.Permalink }}" />
+            </a>
+          </div>
+    {{ if or (modBool (add $index 1) 3) (eq $len (add $index 1)) }} 
+          
+        <hr/>
+        </div>  
+    {{ end }}    
+    {{ end }}
+{{ end }}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<hr>
+{{ range (.Paginate .Pages).Pages }}
+<div class="row">
+    {{ partial "thumbnail.html" . }}
+    {{ .Render "summary"}}
+
+</div>
+<hr />
+
+{{ end }}
+<div class="d-flex justify-content-center mt-1">
+    {{ template "_internal/pagination.html" . }}
+</div>
+
+<hr />
+{{ end }}
+

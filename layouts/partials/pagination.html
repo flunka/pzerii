@@ -1,0 +1,11 @@
+
+<div class="d-flex justify-content-center mt-1">{{ .Paginator.TotalPages}}
+  {{ if .Paginator.HasPrev }}
+    <a class="btn btn-outline-primary mb-4" href="{{ .Paginator.First }}">Pierwsza</a>
+    <a class="btn btn-outline-primary mb-4" href="{{ .Paginator.Prev }}">Poprzednia</a>
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+    <a class="btn btn-outline-primary mb-4" href="{{ .Paginator.Next }}">Następna</a>
+    <a class="btn btn-outline-primary mb-4" href="{{ .Paginator.Last }}">Ostatnia</a>
+  {{ end }}
+</div>

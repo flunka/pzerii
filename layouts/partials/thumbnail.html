@@ -1,0 +1,15 @@
+<div class="col-auto">
+<a href="{{ .Permalink }}" >
+    {{ if .Params.thumbnail }}
+    {{- $image := .Resources.GetMatch (print "img/" .Params.thumbnail) | default (resources.Get .Params.thumbnail) -}}
+    {{ if $image }}
+    {{ $resized := $image.Fill "223x226" }}
+    <img src="{{ $resized.Permalink }}" class="img-thumbnail rounded float-left">
+    {{ else }}
+    <img src="/logo.jpeg" class="img-thumbnail rounded float-left">
+    {{ end }}
+    {{ else }}
+    <img src="/logo.jpeg" class="img-thumbnail rounded float-left">
+    {{ end }}
+</a>
+</div>

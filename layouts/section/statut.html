@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div>
+    <header>
+        <h1>{{.Title}}</h1>
+    </header>
+    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+    
+    <div class="text-center">
+    {{.Content}}
+    </div>
+
+</div>
+{{ end }}

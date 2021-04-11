@@ -1,0 +1,18 @@
+<div class="col">
+    <div class="d-flex justify-content-between">
+        <h2><a class="article-title" 
+        href="{{ .Permalink }}">
+        {{ .Title }}
+        </a></h2>
+        <div class="">
+        <small class="text-muted">
+            {{- if .Params.name  -}}{{ .Params.name }}{{ else }}{{ .Site.Params.author }}{{ end }}, {{ .Date.Format "02.01.2006" }}
+        </small>
+        </div>
+    </div>
+    <p class="article-content">
+        {{ .Summary | safeHTML }}
+    <p class="text-right mt-100">
+        <a href="{{ .Permalink }}" 
+        class="btn btn-primary mt-auto">Więcej &raquo;</a></p>
+</div>

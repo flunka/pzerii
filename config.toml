@@ -1,0 +1,51 @@
+baseURL = "https://pzeriimierzecice.pl/"
+languageCode = "pl"
+title = "PZERiI Mierzęcice II"
+paginate = 6
+paginatePath = "strona"
+
+[params]
+    favicon = "/pzerii.ico"
+    logo1 = "pzerii.ico"
+    logo2= "herb.png"
+    author = "Flunka"
+    year = 2021
+
+[menu]
+
+    [[menu.main]]
+    identifier = ""
+    name = "Strona główna"
+    title = "Strona główna"
+    url = "/"
+    weight = -110
+
+    [[menu.main]]
+    identifier = "statut"
+    name = "Statut"
+    title = "Statut"
+    url = "/statut"
+    weight = -100
+
+    [[menu.main]]
+    identifier = "wydarzenia"
+    name = "Wydarzenia"
+    title = "Wydarzenia"
+    url = "/wydarzenia"
+    weight = -90
+
+    [[menu.main]]
+    identifier = "galeria"
+    name = "Galeria"
+    title = "Galeria"
+    url = "/galeria"
+    weight = -80
+
+    [[menu.main]]
+    identifier = "kontakt"
+    name = "Kontakt"
+    title = "Kontakt"
+    url = "/kontakt"
+    weight = -70
+
+    
