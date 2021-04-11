@@ -1,7 +1,7 @@
 ---
 title: "Statut"
 date: 2021-04-11T14:17:55+02:00
-draft: true
+draft: false
 ---
 
 ## STATUT POLSKIEGO ZWIĄZKU EMERYTÓW, RENCISTÓW I INWALIDÓW

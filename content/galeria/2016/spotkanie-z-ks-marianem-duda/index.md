@@ -1,7 +1,7 @@
 ---
 title: "Spotkanie z księdzem Marianem Dudą"
 date: 2016-04-08T20:54:05+02:00
-draft: true
+draft: false
 name: Zarząd Koła
 thumbnail: 107.jpg
 ---

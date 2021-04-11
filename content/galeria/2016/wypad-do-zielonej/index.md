@@ -1,7 +1,7 @@
 ---
 title: "Wypad do Zielonej"
 date: 2016-06-08T21:54:05+02:00
-draft: true
+draft: false
 name: Zarząd Koła
 thumbnail: 2.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze spotkanie"
 date: 2016-02-12T14:21:43+02:00
-draft: true
+draft: false
 name: Zarząd Koła
 thumbnail: 002.JPG
 ---

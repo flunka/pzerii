@@ -1,7 +1,7 @@
 ---
 title: "Powitanie Papieża"
 date: 2016-07-29T19:03:14+02:00
-draft: true
+draft: false
 name: Zarząd Koła
 thumbnail: powitanie-papieza.jpg
 ---

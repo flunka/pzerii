@@ -1,7 +1,7 @@
 ---
 title: "Dzień Kobiet"
 date: 2016-03-04T19:03:14+02:00
-draft: true
+draft: false
 name: Zarząd Koła
 thumbnail: dzien-kobiet-2016.jpg
 ---
